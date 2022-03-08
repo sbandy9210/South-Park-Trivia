@@ -1,0 +1,15 @@
+body {
+    background-image: url("https://i.imgur.com/sG16QHI.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+    width: 800px;
+}
+
+h1 {
+    font-size: 100px;
+    color: antiquewhite;
+    text-align: center;
+
+}
