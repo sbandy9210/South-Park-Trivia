@@ -11,5 +11,7 @@ h1 {
     font-size: 100px;
     color: antiquewhite;
     text-align: center;
-
+    font-family: 'South Park', sans-serif;
+    position: relative;
+    display: flex;
 }
