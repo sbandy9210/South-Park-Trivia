@@ -114,9 +114,12 @@ let start = true;
 
 let startGame = () => {
     const question = document.getElementById('questions');
+    
     // setting the question text
     question.innerText = myQuestions[0].q
+    
     // getting the options 
+    
     let a = document.getElementById('A');
     let b = document.getElementById('B');
     let c = document.getElementById('C');
@@ -132,6 +135,42 @@ let startGame = () => {
     answer8.innerText = myQuestions[7].answers[3].text
     answer9.innerText = myQuestions[8].answers[0].text
     answer10.innerText = myQuestions[9].answers[0].text 
+
+    //show selection for answer choices
+
+    a.addEventListener('click', () => {
+        a.style.backgroundColor = 'green';
+        b.style.backgroundColor = 'red';
+        c.style.backgroundColor = 'red';
+        d.style.backgroundColor = 'red';
+    })
+    
+    b.addEventListener('click', () => {
+        a.style.backgroundColor = 'red';
+        b.style.backgroundColor = 'green';
+        c.style.backgroundColor = 'red';
+        d.style.backgroundColor = 'red';
+        
+    })
+
+    c.addEventListener('click', () => {
+        a.style.backgroundColor = 'red';
+        b.style.backgroundColor = 'red';
+        c.style.backgroundColor = 'green';
+        d.style.backgroundColor = 'red';
+        
+    })
+
+    d.addEventListener('click', () => {
+        a.style.backgroundColor = 'red';
+        b.style.backgroundColor = 'red';
+        c.style.backgroundColor = 'red';
+        d.style.backgroundColor = 'green';
+        
+    })
+
+
+
 }
 
 
