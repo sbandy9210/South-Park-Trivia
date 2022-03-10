@@ -38,16 +38,17 @@ body {
 
 h1 {
     font-size: 100px;
-    color: rgb(179, 44, 44);
+    color: rgb(85, 75, 116);
     align-items: center;
     font-family: 'South Park', sans-serif;
     justify-content: center;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    padding-left: 2.5em;
-    padding-right: 2em;
-    padding-top: .5em;
+    padding-left: 3em;
+    
+    
+    
 }
 
 
@@ -91,13 +92,13 @@ h1 {
 
 #questions {
     font-family: 'South Park', sans-serif;
-    color: black;
+    color: rgb(22, 49, 172);
     display: flex;
     justify-content: center;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 40px;
-    padding-left: 3.75em;
-    padding-right: 3.75em;
+    font-size: 45px;
+    padding-left: 4em;
+    
 }
