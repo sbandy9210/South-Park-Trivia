@@ -120,6 +120,7 @@ let start = true;
 let question = document.getElementById('questions')
 let checkAnswer = document.getElementById('checkAnswer')
 let nextQuestion = document.getElementById('next')
+let answerSelected = false;
 
 let n = 0 // question counter
 question.innerText = myQuestions[n].question
@@ -179,6 +180,7 @@ let startGame = () => {
 }
 
     a.addEventListener('click', () => {
+        answerSelected = true
         a.style.backgroundColor = 'blue';
         b.style.backgroundColor = 'white';
         c.style.backgroundColor = "white";
@@ -186,6 +188,7 @@ let startGame = () => {
     })
     
     b.addEventListener('click', () => {
+        answerSelected = true
         a.style.backgroundColor = "white";
         b.style.backgroundColor = 'blue';
         c.style.backgroundColor = "white";
@@ -194,6 +197,7 @@ let startGame = () => {
     })
 
     c.addEventListener('click', () => {
+        answerSelected = true
         a.style.backgroundColor = "white";
         b.style.backgroundColor = "white";
         c.style.backgroundColor = 'blue';
@@ -202,6 +206,7 @@ let startGame = () => {
     })
 
     d.addEventListener('click', () => {
+        answerSelected = true
         a.style.backgroundColor = "white";
         b.style.backgroundColor = "white";
         c.style.backgroundColor = "white";
@@ -209,39 +214,42 @@ let startGame = () => {
     })
 
 
+
     checkAnswer.addEventListener('click', () => {
-    if (myQuestions[0].question === question.innerText) {
-           document.getElementById(myQuestions[0].correctAnswer).style.backgroundColor = 'green'
- } if (myQuestions[1].question === question.innerText) {
-        document.getElementById(myQuestions[1].correctAnswer).style.backgroundColor = 'green'
-      
-    } if (myQuestions[2].question === question.innerText) {
-        document.getElementById(myQuestions[2].correctAnswer).style.backgroundColor = 'green'
-   
-    } if (myQuestions[3].question === question.innerText) {
-        document.getElementById(myQuestions[3].correctAnswer).style.backgroundColor = 'green'
-      
-    } if (myQuestions[4].question === question.innerText) {
-        document.getElementById(myQuestions[4].correctAnswer).style.backgroundColor = 'green'
-    } if (myQuestions[5].question === question.innerText) {
-        document.getElementById(myQuestions[5].correctAnswer).style.backgroundColor = 'green'
-    } if (myQuestions[6].question === question.innerText) {
-        document.getElementById(myQuestions[6].correctAnswer).style.backgroundColor = 'green'
-    } if (myQuestions[7].question === question.innerText) {
-        document.getElementById(myQuestions[7].correctAnswer).style.backgroundColor = 'green'
-    } if (myQuestions[8].question === question.innerText) {
-        document.getElementById(myQuestions[8].correctAnswer).style.backgroundColor = 'green'
-    } if (myQuestions[9].question  === question.innerText) {
-        document.getElementById(myQuestions[9].correctAnswer).style.backgroundColor = 'green'
-    } 
-    
-
-
-
-    })
+        if (answerSelected){
+            if (myQuestions[0].question === question.innerText) {
+                document.getElementById(myQuestions[0].correctAnswer).style.backgroundColor = 'green'
+            
+            }  else if (myQuestions[1].question === question.innerText) {
+                document.getElementById(myQuestions[1].correctAnswer).style.backgroundColor = 'green'
+            
+            } else if (myQuestions[2].question === question.innerText) {
+                document.getElementById(myQuestions[2].correctAnswer).style.backgroundColor = 'green'
+        
+            } else if (myQuestions[3].question === question.innerText) {
+                document.getElementById(myQuestions[3].correctAnswer).style.backgroundColor = 'green'
+            
+            } else if (myQuestions[4].question === question.innerText) {
+                document.getElementById(myQuestions[4].correctAnswer).style.backgroundColor = 'green'
+            } else if (myQuestions[5].question === question.innerText) {
+                document.getElementById(myQuestions[5].correctAnswer).style.backgroundColor = 'green'
+            } else if (myQuestions[6].question === question.innerText) {
+                document.getElementById(myQuestions[6].correctAnswer).style.backgroundColor = 'green'
+            } else if (myQuestions[7].question === question.innerText) {
+                document.getElementById(myQuestions[7].correctAnswer).style.backgroundColor = 'green'
+            } else if (myQuestions[8].question === question.innerText) {
+                document.getElementById(myQuestions[8].correctAnswer).style.backgroundColor = 'green'
+            } else if (myQuestions[9].question  === question.innerText) {
+                document.getElementById(myQuestions[9].correctAnswer).style.backgroundColor = 'green'
+            } else {
+                document.getElementsID(myQuestions.answers).style.backgroundColor = 'white'
+            }
+        }
+})
 
 
     nextQuestion.addEventListener('click', () => {
+        answerSelected = false
         n++
         question.innerText = myQuestions[n].question
         startGame();
@@ -252,6 +260,7 @@ let startGame = () => {
     })
     startGame();
     
+
 
 
 
