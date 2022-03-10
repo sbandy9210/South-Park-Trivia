@@ -1,3 +1,30 @@
+.answersContainer {
+    margin: auto;
+    font-family: 'South Park', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 45%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    
+    
+   
+}
+
+.navigation {
+    padding: 0 10px;
+    display:column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    
+}
+
+
 body {
     background-image: url("https://i.imgur.com/sG16QHI.jpg");
     background-size: cover;
@@ -8,44 +35,27 @@ body {
     width: 800px;
 }
 
+
 h1 {
     font-size: 100px;
-    color: dodgerblue;
+    color: rgb(179, 44, 44);
     align-items: center;
     font-family: 'South Park', sans-serif;
-    /* display: flex; */
     justify-content: center;
-    
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-left: 2.5em;
+    padding-right: 2em;
+    padding-top: .5em;
 }
 
-#questions {
-    font-family: 'South Park', sans-serif;
-    color: black;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
 
 
-}
-
-.answersContainer {
-    font-family: 'South Park', sans-serif;
-    /* padding: 10px 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 45%;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    
-   
-}
 
 #A {
     font-family: 'South Park', sans-serif;
     font-size: 30px;
-    
 }
 
 #B {
@@ -62,26 +72,32 @@ h1 {
     font-family: 'South Park', sans-serif;
     font-size: 30px;
 }
-.navigation {
-    padding: 0 10px;
-    display:column;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
 
+#checkAnswer {
+    font-family:'South Park', sans-serif;
+    font-size: 30px;
+    display: flex;
+    margin: auto;
 }
+
 
 #next {
     font-family:'South Park', sans-serif;
     font-size: 30px;
     justify-content: center;
-
+    margin: auto;
 }
 
-#checkAnswer {
-    font-family:'South Park', sans-serif;
-    font-size: 30px;
-    display: ;
 
+#questions {
+    font-family: 'South Park', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 40px;
+    padding-left: 3.75em;
+    padding-right: 3.75em;
 }
