@@ -1,6 +1,6 @@
 const myQuestions = [
     {
-        question0: 'What pet does Cartman have?',
+        question: 'What pet does Cartman have?',
         answers: {
             A: 'Gerbil',
             B: 'Fish',
@@ -11,7 +11,7 @@ const myQuestions = [
     },
 
     {
-        question1: 'What character did Issac Hayes play on on the show?',
+        question: 'What character did Issac Hayes play on on the show?',
         answers: {
             A: 'Randy Marsh',
             B: 'Chef',
@@ -22,7 +22,7 @@ const myQuestions = [
     },
 
     {
-        question2: 'Which one of the following celebrities have not been impersonated on South Park?',
+        question: 'Which one of the following celebrities have not been impersonated on South Park?',
         answers: {
             A: 'Jack Dorsey',
             B: 'Russell Crowe',
@@ -33,7 +33,7 @@ const myQuestions = [
     },
 
     {
-        question3: 'Which character wants to be a stand up comedian?',
+        question: 'Which character wants to be a stand up comedian?',
         answers: {
             A: 'Token',
             B: 'Butters',
@@ -44,7 +44,7 @@ const myQuestions = [
     },
 
     {
-        question4: 'Which character is a Geologist?',
+        question: 'Which character is a Geologist?',
         answers: {
             A: 'Gerald Broflofski',
             B: 'Randy Marsh',
@@ -55,7 +55,7 @@ const myQuestions = [
     },
 
     {
-        question5: 'According to South Park what kind of music gets rid of hippies',
+        question: 'According to South Park what kind of music gets rid of hippies',
         answers: {
             A: 'Pop',
             B: 'Country',
@@ -66,7 +66,7 @@ const myQuestions = [
     },
 
     {
-        question6: 'Jesus had a talk show called?',
+        question: 'Jesus had a talk show called?',
         answers: {
             A: 'Talk Jesus',
             B: 'Jesus and Friends',
@@ -77,7 +77,7 @@ const myQuestions = [
     },
 
     {
-        question7: 'In the episode "Cartman Land" why does Cartman hate theme parks?',
+        question: 'In the episode "Cartman Land" why does Cartman hate theme parks?',
         answers: {
             A: 'Not enough extreme rides',
             B: 'He is afraid of rides',
@@ -88,7 +88,7 @@ const myQuestions = [
     },
 
     {
-        question8: 'What is Butters first name?',
+        question: 'What is Butters first name?', // 
         answers: {
             A: 'Leopold',
             B: 'Clyde',
@@ -99,7 +99,7 @@ const myQuestions = [
     },
 
     {
-        question9: 'In the episode "Smug Alert" what does Gerald Broflofski obsess over?',
+        question: 'In the episode "Smug Alert" what does Gerald Broflofski obsess over?',
         answers: {
             A: 'Hybrid cars',
             B: 'Pickup trucks',
@@ -117,133 +117,152 @@ let c = document.getElementById('C');
 let d = document.getElementById('D');
 
 let start = true;
+let question = document.getElementById('questions')
+let checkAnswer = document.getElementById('checkAnswer')
+let nextQuestion = document.getElementById('next')
 
-question.innerText = question[0]
+let n = 0 // question counter
+question.innerText = myQuestions[n].question
 let startGame = () => {
     
-    if (myQuestions[0] === question.innerText) {
+    if (myQuestions[0].question === question.innerText) {
         a.innerText = 'Gerbil'
         b.innerText =  'Fish'
         c.innerText =  'Cat'
         d.innerText =  'Dog'
-    } if (myQuestions[1] === question.innerText) {
+    } if (myQuestions[1].question === question.innerText) {
         a.innerText = 'Randy Marsh'
         b.innerText =  'Chef'
         c.innerText =  'Mayor McDaniels'
         d.innerText =  'Mr. Mackey'
-    } if (myQuestions[2] === question.innerText) {
+    } if (myQuestions[2].question === question.innerText) {
         a.innerText = 'Jack Dorsey'
         b.innerText =  'Russll Crowe'
         c.innerText =  'Mark Zuckerberg'
         d.innerText =  'Kanye West'
-    } if (myQuestions[3] === question.innerText) {
+    } if (myQuestions[3].question === question.innerText) {
         a.innerText = 'Token'
         b.innerText =  'Butters'
         c.innerText =  'Stan'
         d.innerText =  'Jimmy'
-    } if (myQuestions[4] === question.innerText) {
+    } if (myQuestions[4].question === question.innerText) {
         a.innerText = 'Gerald Broflofski'
         b.innerText =  'Randy Marsh'
-        c.innerText =  'MR. Garrison'
+        c.innerText =  'Mr. Garrison'
         d.innerText =  'Jimbo'
-    } if (myQuestions[5] === question.innerText) {
+    } if (myQuestions[5].question === question.innerText) {
         a.innerText = 'Pop'
         b.innerText =  'Country'
         c.innerText =  'Metal'
         d.innerText =  'Rap'
-    } if (myQuestions[6] === question.innerText) {
+    } if (myQuestions[6].question === question.innerText) {
         a.innerText = 'Talk Jesus'
         b.innerText =  'Jesus and Friends'
         c.innerText =  'Jesus and Pals'
         d.innerText =  'Jesus Live'
-    } if (myQuestions[7] === question.innerText) {
-        a.innerText = 'Not enough extrreme rides'
+    } if (myQuestions[7].question === question.innerText) {
+        a.innerText = 'Not enough extreme rides'
         b.innerText =  'He is afraid of rides'
         c.innerText =  'He had an accident as a child at at theme park'
         d.innerText =  'Too many lines'
-    } if (myQuestions[8] === question.innerText) {
+    } if (myQuestions[8].question === question.innerText) {
         a.innerText = 'Leopold'
         b.innerText =  'Clyde'
         c.innerText =  'Stan'
         d.innerText =  'Kyle'
-    } if (myQuestions[9] === question.innerText) {
+    } if (myQuestions[9].question  === question.innerText) {
         a.innerText = 'Hybrid cars'
         b.innerText =  'Pickup trucks'
         c.innerText =  'SUVs'
         d.innerText =  'sedans'
     } 
-    
-
-
-
-
-
-
-
-
-
-
-
-    // // setting the question text
-    // question.innerText = myQuestions[0].q
-    
-    // getting the options 
-    
-    // let a = document.getElementById('A');
-    // let b = document.getElementById('B');
-    // let c = document.getElementById('C');
-    // let d = document.getElementById('D');
-
-    // answer1.innerText = myQuestions[0].answers[2].text
-    // answer2.innerText = myQuestions[1].answers[1].text
-    // answer3.innerText = myQuestions[2].answers[0].text
-    // answer4.innerText = myQuestions[3].answers[3].text
-    // answer5.innerText = myQuestions[4].answers[1].text
-    // answer6.innerText = myQuestions[5].answers[2].text
-    // answer7.innerText = myQuestions[6].answers[2].text
-    // answer8.innerText = myQuestions[7].answers[3].text
-    // answer9.innerText = myQuestions[8].answers[0].text
-    // answer10.innerText = myQuestions[9].answers[0].text 
-
-    //show selection for answer choices
-
-    // a.addEventListener('click', () => {
-    //     a.style.backgroundColor = 'green';
-    //     b.style.backgroundColor = 'red';
-    //     c.style.backgroundColor = 'red';
-    //     d.style.backgroundColor = 'red';
-    // })
-    
-    // b.addEventListener('click', () => {
-    //     a.style.backgroundColor = 'red';
-    //     b.style.backgroundColor = 'green';
-    //     c.style.backgroundColor = 'red';
-    //     d.style.backgroundColor = 'red';
-        
-    // })
-
-    // c.addEventListener('click', () => {
-    //     a.style.backgroundColor = 'red';
-    //     b.style.backgroundColor = 'red';
-    //     c.style.backgroundColor = 'green';
-    //     d.style.backgroundColor = 'red';
-        
-    // })
-
-    // d.addEventListener('click', () => {
-    //     a.style.backgroundColor = 'red';
-    //     b.style.backgroundColor = 'red';
-    //     c.style.backgroundColor = 'red';
-    //     d.style.backgroundColor = 'green';
-        
-    // })
-
-    
-
-
-
 }
-startGame();
+
+    a.addEventListener('click', () => {
+        a.style.backgroundColor = 'blue';
+        b.style.backgroundColor = 'white';
+        c.style.backgroundColor = "white";
+        d.style.backgroundColor = "white";
+    })
+    
+    b.addEventListener('click', () => {
+        a.style.backgroundColor = "white";
+        b.style.backgroundColor = 'blue';
+        c.style.backgroundColor = "white";
+        d.style.backgroundColor = "white";
+        
+    })
+
+    c.addEventListener('click', () => {
+        a.style.backgroundColor = "white";
+        b.style.backgroundColor = "white";
+        c.style.backgroundColor = 'blue';
+        d.style.backgroundColor = "white";
+        
+    })
+
+    d.addEventListener('click', () => {
+        a.style.backgroundColor = "white";
+        b.style.backgroundColor = "white";
+        c.style.backgroundColor = "white";
+        d.style.backgroundColor = 'blue';
+    })
 
 
-taget question sextion set to varianle inner text
+    checkAnswer.addEventListener('click', () => {
+    if (myQuestions[0].question === question.innerText) {
+           document.getElementById(myQuestions[0].correctAnswer).style.backgroundColor = 'green'
+ } if (myQuestions[1].question === question.innerText) {
+        document.getElementById(myQuestions[1].correctAnswer).style.backgroundColor = 'green'
+      
+    } if (myQuestions[2].question === question.innerText) {
+        document.getElementById(myQuestions[2].correctAnswer).style.backgroundColor = 'green'
+   
+    } if (myQuestions[3].question === question.innerText) {
+        document.getElementById(myQuestions[3].correctAnswer).style.backgroundColor = 'green'
+      
+    } if (myQuestions[4].question === question.innerText) {
+        document.getElementById(myQuestions[4].correctAnswer).style.backgroundColor = 'green'
+    } if (myQuestions[5].question === question.innerText) {
+        document.getElementById(myQuestions[5].correctAnswer).style.backgroundColor = 'green'
+    } if (myQuestions[6].question === question.innerText) {
+        document.getElementById(myQuestions[6].correctAnswer).style.backgroundColor = 'green'
+    } if (myQuestions[7].question === question.innerText) {
+        document.getElementById(myQuestions[7].correctAnswer).style.backgroundColor = 'green'
+    } if (myQuestions[8].question === question.innerText) {
+        document.getElementById(myQuestions[8].correctAnswer).style.backgroundColor = 'green'
+    } if (myQuestions[9].question  === question.innerText) {
+        document.getElementById(myQuestions[9].correctAnswer).style.backgroundColor = 'green'
+    } 
+    
+
+
+
+    })
+
+
+    nextQuestion.addEventListener('click', () => {
+        n++
+        question.innerText = myQuestions[n].question
+        startGame();
+        a.style.backgroundColor = 'white';
+        b.style.backgroundColor = 'white';
+        c.style.backgroundColor = "white";
+        d.style.backgroundColor = "white";
+    })
+    startGame();
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
