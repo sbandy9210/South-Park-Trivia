@@ -11,7 +11,7 @@ const myQuestions = [
     },
 
     {
-        question: 'What character did Issac Hayes play on on the show?',
+        question: 'Who does Issac Hayes play on on the show?',
         answers: {
             A: 'Randy Marsh',
             B: 'Chef',
@@ -22,7 +22,7 @@ const myQuestions = [
     },
 
     {
-        question: 'Which one of the following celebrities have not been impersonated on South Park?',
+        question: 'Which celebrity has not been impersonated?',
         answers: {
             A: 'Jack Dorsey',
             B: 'Russell Crowe',
@@ -55,7 +55,7 @@ const myQuestions = [
     },
 
     {
-        question: 'According to South Park what kind of music gets rid of hippies',
+        question: 'What kind of music gets rid of hippies',
         answers: {
             A: 'Pop',
             B: 'Country',
@@ -77,7 +77,7 @@ const myQuestions = [
     },
 
     {
-        question: 'In the episode "Cartman Land" why does Cartman hate theme parks?',
+        question: 'Why does Cartman hate theme parks?',
         answers: {
             A: 'Not enough extreme rides',
             B: 'He is afraid of rides',
@@ -99,12 +99,12 @@ const myQuestions = [
     },
 
     {
-        question: 'In the episode "Smug Alert" what does Gerald Broflofski obsess over?',
+        question: 'What blood type do Kyle and Cartman both have?',
         answers: {
-            A: 'Hybrid cars',
-            B: 'Pickup trucks',
-            C: 'SUVs', 
-            D: 'Sedans'
+            A: 'AB-',
+            B: 'O',
+            C: 'A', 
+            D: 'B'
         },
         correctAnswer: 'A'
     }
@@ -172,10 +172,10 @@ let startGame = () => {
         c.innerText = 'Stan'
         d.innerText = 'Kyle'
     } if (myQuestions[9].question  === question.innerText) {
-        a.innerText = 'Hybrid cars'
-        b.innerText = 'Pickup trucks'
-        c.innerText = 'SUVs'
-        d.innerText = 'Sedans'
+        a.innerText = 'AB-'
+        b.innerText = 'O'
+        c.innerText = 'A'
+        d.innerText = 'B'
     } 
 }
 

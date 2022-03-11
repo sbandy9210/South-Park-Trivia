@@ -1,40 +1,52 @@
-.answersContainer {
-    margin: auto;
-    font-family: 'South Park', sans-serif;
-    display: flex;
-    align-items: center;
-    border-radius: 45%;
-    height: 50px;
-    width: 50px;
-    text-align: center;
-    flex-direction: column;
-    
-    
-   
-}
-
-.navigation {
-    margin: 400px;
-    padding: 0 10px;
-    display:flex;
-    flex-direction: row;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    
-    
-}
-
-
-
 body {
     background-image: url("https://i.imgur.com/sG16QHI.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
+    text-align: center;
     background-color: #f5f9f8;
 }
+
+.answersContainer {
+    margin-top: 30px;
+    margin: auto;
+    font-family: 'South Park', sans-serif;
+    display: flex;
+    align-items: center;
+    /* height: 50px;
+    width: 50px; */
+    
+    flex-direction: column;
+    
+    
+   
+}
+
+.style {
+    background-color: rgba(255,255,255,.5);
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+.navigation {
+   
+    padding: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    
+}
+
+
+
 
 
 h1 {
@@ -92,14 +104,13 @@ h1 {
 
 
 #questions {
+    margin-bottom: 30px;
     font-family: 'South Park', sans-serif;
     color: rgb(22, 49, 172);
-    display: flex;
     justify-content: center;
-    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     font-size: 3rem;
-    padding-left: 4em;
+    
     
 }
