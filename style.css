@@ -7,36 +7,38 @@
     height: 50px;
     width: 50px;
     text-align: center;
+    flex-direction: column;
     
     
    
 }
 
 .navigation {
+    margin: 400px;
     padding: 0 10px;
-    display:column;
-    justify-content: center;
+    display:flex;
+    flex-direction: row;
     align-items: center;
     height: 50px;
     width: 50px;
-    margin: auto;
+    
     
 }
+
 
 
 body {
     background-image: url("https://i.imgur.com/sG16QHI.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
-    height: auto;
+    height: 100vh;
     width: 100vw;
     background-color: #f5f9f8;
 }
 
 
 h1 {
-    font-size: 7vh;
+    font-size: 6rem;
     color: rgb(85, 75, 116);
     align-items: center;
     font-family: 'South Park', sans-serif;
@@ -97,7 +99,7 @@ h1 {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 5vh;
+    font-size: 3rem;
     padding-left: 4em;
     
 }
