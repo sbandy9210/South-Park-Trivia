@@ -88,7 +88,7 @@ const myQuestions = [
     },
 
     {
-        question: 'What is Butters first name?', // 
+        question: 'What is Butters first name?', 
         answers: {
             A: 'Leopold',
             B: 'Clyde',
